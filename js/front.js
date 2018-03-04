@@ -421,7 +421,7 @@ $(function () {
                 if ($.trim(result.code) != 0) {
                     $("#message").html("文件下载失败，请稍后重试！");
                 } else {
-                    $("#message").html('点击链接下载：<a class="text-primary" href="' + result.file + '">下载</a>&nbsp;&nbsp;<small><i>(&nbsp;点击右键另存为&nbsp;)</i></small>');
+                    $("#message").html('点击链接下载：<a class="text-primary" target="_blank" href="' + result.file + '">下载</a>&nbsp;&nbsp;<small><i>(&nbsp;点击右键另存为&nbsp;)</i></small>');
                 }
             }
         })
