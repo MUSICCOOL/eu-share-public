@@ -569,7 +569,10 @@ $(function () {
                 data: {order_num: order_num, amount: amount, type: type},
                 dataType: "json",
                 success: function (result) {
-                    console.log(result);
+                    alert(result.msg);
+                    location.href='/account/account';
+                },
+                error: function (result) {
                     alert(result.msg);
                 }
             })
@@ -601,7 +604,9 @@ $(function () {
             data: {pro_id: pro_id, e_points: e_points, u_id: u_id},
             dataType: "json",
             success: function (result) {
-                console.log(result);
+                alert(result.msg);
+            },
+            error: function (result) {
                 alert(result.msg);
             }
         })
